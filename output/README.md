@@ -1,11 +1,11 @@
 
-# README.md Generator
+# README Generator
 
-[![License: GLP](https://img.shields.io/badge/License-GLP-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-creating a readme
+This app allows the user to use the terminal to create a README.md. Using the terminal,  the user will be asked several questions about the current project. Once the user answeres the questions,  the readme will be generated and can be used for the user projects.
 
 ## Table of Contents
 
@@ -29,11 +29,11 @@ npm start
 
 ## License
     
-  GLP
+  MIT
 
 ## Contributing
 
-David, Monte, Kala
+David Shober
 
 ## tests
 
@@ -41,5 +41,5 @@ npm test
 
 ## Questions
 
-If you have any questions, open an issue or contact me via github:[shobes1421](https://github.com/shobes1421) or Email: shobes1421@hotmail.com
+If you have any questions, open an issue or contact me via github:[Shobes1421](https://github.com/Shobes1421) or Email: Shobes1421@hotmail.com
 
