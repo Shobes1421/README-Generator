@@ -1,11 +1,11 @@
 
-# test
+# README.md Generator
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GLP](https://img.shields.io/badge/License-GLP-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-tested
+creating a readme
 
 ## Table of Contents
 
@@ -29,11 +29,11 @@ npm start
 
 ## License
     
-  MIT
+  GLP
 
 ## Contributing
 
-dudes
+David, Monte, Kala
 
 ## tests
 
@@ -41,5 +41,5 @@ npm test
 
 ## Questions
 
-If you have any questions, open an issue or contact me via github:[shobes1421](https://github.com/shobes1421) or Email: Shobes1421@hotmail.com
+If you have any questions, open an issue or contact me via github:[shobes1421](https://github.com/shobes1421) or Email: shobes1421@hotmail.com
 

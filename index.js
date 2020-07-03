@@ -17,7 +17,7 @@ const questions = [
 
     {
     type: "input",
-    name: "Title",
+    name: "title",
     message: "What is the name of your project?",
     },
     
@@ -68,30 +68,17 @@ function writeToFile(fileName, data) {
     fs.writeFileSync("./output/" + fileName, data);
 }
 
-//*** 
-const test = {
-    github: 'shobes1421',
-    email: 'Shobes1421@hotmail.com',
-    title: 'test',
-    description: 'tested',
-    install: 'npm install',
-    usage: 'npm start',
-    license: 'MIT',
-    contrib: 'dudes',
-    tests: 'npm test'
-}
-//***
-
 
 function init() {
-    writeToFile("README.md", generateMarkdown(test));
+    //writeToFile("README.md", generateMarkdown(test));
     
-    //inquirer
-        //.prompt(questions)
-        //.then(answers => {
-            //console.log(answers);
-            //writeToFile("README.md", "testing");
-        //})
+    inquirer
+        .prompt(questions)
+        .then(answers => {
+            console.log(answers);
+            writeToFile("README.md", generateMarkdown(answers));
+        })
+        .catch(err => console.error(err));
     
 }
 
