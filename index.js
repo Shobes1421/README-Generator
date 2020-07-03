@@ -1,7 +1,20 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
+
 
 const questions = [
+    {
+    type: "input",
+    name: "github",
+    message: "What is your Github profile username?",
+    },
+    {
+    type: "input",
+    name: "email",
+    message: "What is your Email?",
+    },
+
     {
     type: "input",
     name: "Title",
@@ -32,7 +45,7 @@ const questions = [
     name: "license",
     message: "What license is the project under?",
     default: "MIT",
-    choices: ["MIT", "GLP"],
+    choices: ["MIT", "GLP", "None"],
     },
 
     {
@@ -55,13 +68,30 @@ function writeToFile(fileName, data) {
     fs.writeFileSync("./output/" + fileName, data);
 }
 
+//*** 
+const test = {
+    github: 'shobes1421',
+    email: 'Shobes1421@hotmail.com',
+    title: 'test',
+    description: 'tested',
+    install: 'npm install',
+    usage: 'npm start',
+    license: 'MIT',
+    contrib: 'dudes',
+    tests: 'npm test'
+}
+//***
+
+
 function init() {
-    inquirer
-        .prompt(questions)
-        .then(answers => {
-            console.log(answers);
+    writeToFile("README.md", generateMarkdown(test));
+    
+    //inquirer
+        //.prompt(questions)
+        //.then(answers => {
+            //console.log(answers);
             //writeToFile("README.md", "testing");
-        })
+        //})
     
 }
 
